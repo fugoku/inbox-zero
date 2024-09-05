@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev -H 0.0.0.0",
-    "build": "NODE_OPTIONS=--max_old_space_size=8192 prisma migrate deploy && next build",
-    "start": "next start",
+    "dev": "node init && next dev -H 0.0.0.0",
+    "build": "node init && NODE_OPTIONS=--max_old_space_size=8192 prisma migrate deploy && next build",
+    "start": "node init && next start",
     "lint": "next lint",
     "test": "vitest",
     "preinstall": "npx only-allow pnpm",
