@@ -2,8 +2,8 @@
   "name": "inbox-zero",
   "private": true,
   "scripts": {
-    "build": "turbo build",
-    "dev": "turbo dev",
+    "build": "node init && turbo build",
+    "dev": "node init && turbo dev",
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "prettier": "npx prettier --write \"**/*.{ts,tsx}\"",
